@@ -1,7 +1,7 @@
 Prebuilt WebViewGoogle APK's grabbed from http://www.apkmirror.com/apk/google-inc/android-system-webview/
 
 Versions :
-ARM => 52.0.2743.98
+ARM => 53.0.2785.124
 Others => 52.0.2743.91
 
 HOW TO BUILD => https://github.com/HealthyMarshmallow/android_build/commit/4dab0c07b4af2a8b5dfe9c656cd37e
