@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The Android Open Source Project
+# Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,12 +28,10 @@ LOCAL_REQUIRED_MODULES := \
         libwebviewchromium_loader \
         libwebviewchromium_plat_support
 
-LOCAL_MODULE_TARGET_ARCH := arm arm64 x86
+LOCAL_MODULE_TARGET_ARCH := arm
 my_src_arch := $(call get-prebuilt-src-arch,$(LOCAL_MODULE_TARGET_ARCH))
 LOCAL_SRC_FILES := prebuilt/$(my_src_arch)/WebViewGoogle.apk
 
 LOCAL_PREBUILT_JNI_LIBS_arm := @lib/armeabi-v7a/libwebviewchromium.so
-LOCAL_PREBUILT_JNI_LIBS_arm64 := @lib/arm64-v8a/libwebviewchromium.so
-LOCAL_PREBUILT_JNI_LIBS_x86 := @lib/x86/libwebviewchromium.so
 
 include $(BUILD_PREBUILT)
